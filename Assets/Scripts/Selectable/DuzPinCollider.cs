@@ -1,18 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class DuzPinCollider : MonoBehaviour
+public class DuzPinCollider : MonoBehaviour, ISelectable
 {
-    // Start is called before the first frame update
-    void Start()
+    public DuzPin duzPin;
+    public void OnDeselect()
     {
-        
+        duzPin.OnDeselect();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnSelect()
     {
-        
+        duzPin.OnSelect();
+    }
+
+    public void OnSwipeDown()
+    {
+        duzPin.OnSwipeDown();
+    }
+
+    public void OnSwipeLeft()
+    {
+        duzPin.OnSwipeLeft();
+    }
+
+    public void OnSwipeRight()
+    {
+        duzPin.OnSwipeRight();
+    }
+
+    public void OnSwipeUp()
+    {
+        duzPin.OnSwipeUp();
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DuzPin : MonoBehaviour
+public class UPin : MonoBehaviour
 {
     [SerializeField] private Transform _rotateableObject;
 
@@ -26,6 +26,17 @@ public class DuzPin : MonoBehaviour
 
     public void OnSwipeRight()
     {
+
+
+    }
+
+    public void OnSwipeLeft()
+    {
+
+    }
+
+    public void OnSwipeUp()
+    {
         if (!_uping)
         {
 
@@ -41,10 +52,9 @@ public class DuzPin : MonoBehaviour
             }
 
         }
-
     }
 
-    public void OnSwipeLeft()
+    public void OnSwipeDown()
     {
         if (!_uping)
         {
@@ -60,16 +70,6 @@ public class DuzPin : MonoBehaviour
             }
 
         }
-    }
-
-    public void OnSwipeUp()
-    {
-        
-    }
-
-    public void OnSwipeDown()
-    {
-       
     }
 
     public void OnSelect()
@@ -93,6 +93,5 @@ public class DuzPin : MonoBehaviour
         normalColl.SetActive(true);
         bigColl.SetActive(false);
     }
-
 
 }

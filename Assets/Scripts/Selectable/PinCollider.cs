@@ -142,24 +142,20 @@ public class PinCollider : MonoBehaviour, ISelectable
     public void OnSwipeLeft()
     {
         InputLeft = true;
-        Debug.Log("SwipeLeft");
     }
 
     public void OnSwipeRight()
     {
         InputRight = true;
-        Debug.Log("SwipeRight");
     }
 
     public void OnSwipeUp()
     {
         InputUp = true;
-        Debug.Log("SwipeUp");
     }
     public void OnSwipeDown()
     {
         InputDown = true;
-        Debug.Log("SwipeDown");
     }
     public void ResetAll()
     {
